@@ -1,0 +1,5 @@
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+answer = int((n1+n1%2) / 2 + (n2 + n2 % 2) / 2 + (n3 + n3 % 2) / 2)
+print(answer)
