@@ -40,6 +40,7 @@ for i in range(1,a2[0]-3):
     if a2[i]%13==0:
         if a2[i]%2==0:
             k-=1
+            h-=1
             h1 = hn
             if a2[i+1]%2==1:
                 h1-=1
@@ -52,6 +53,7 @@ for i in range(1,a2[0]-3):
             n+=h1
         else:
             kn-=1
+            hn-=1
             h1 = h
             if a2[i+1]%2==0:
                 h1-=1
