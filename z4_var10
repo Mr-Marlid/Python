@@ -1,0 +1,10 @@
+a = list(map(int, input().split()))
+A = set('')
+for i in range(len(a)):
+    y = len(A)
+    A.add(a[i])
+
+    if y == len(A):
+        print("YES")
+    else:
+        print("NO")
