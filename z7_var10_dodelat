@@ -1,0 +1,21 @@
+n = int(input())
+a = list(map(str, input().split()))
+b = input()
+B = set('')
+if b == "YES":
+    A = set(a)
+else:
+    B = set(a)
+a = list(map(str, input().split()))
+while a[0] != "HELP":
+    
+    b = input()
+    if b == "YES":
+        A = (A.intersection(set(a))).difference(B)
+    else:
+        B.union(set(a))
+        print()
+        print(B)
+        A = A.difference(B)
+    a = list(map(str, input().split()))
+print(A)
