@@ -1,0 +1,20 @@
+class Animal():
+
+    def __init__ (self):
+        print("Родилось животное" )
+
+
+class Dog():
+    name = ""
+
+    def __init__ (self, newName):
+        self.name = newName
+        Animal.__init__(self)
+        print ("Родилась собака")
+
+    def makeNoise (self):
+        print(self.name + " говорит Гав")
+
+
+myDog = Dog(input())
+myCat.makeNoise()
